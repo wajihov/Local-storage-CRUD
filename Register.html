@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>R E G I S T E R</title>
+</head>
+<body onload="myLoad()">
+        <div class="header" style="text-align: center">Ceci est le bandeau
+        </div>
+        <div class="menu">
+            <div class="col-3 col-s-3">
+                <ul>                    
+                    <li><a href="#" onclick="AjouterUser()" id="AjouterPersonne">Ajouter Personne</a></li>
+                    <li><a href="#" onclick="listeUser()">Liste Personne</a> </li>                        
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div id="user">                    
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="Your Name ...">
+
+                    <label for="llast">Last Name</label>
+                    <input type="text" id="llast" placeholder="Your Last Name ...">
+
+                    <label for="lmail">Mail</label>
+                    <input type="text" id="lemail" placeholder="example@gmail.com">
+
+                    <label for="lpassword">Password</label>
+                    <input type="text" id="lpassword" placeholder="Your password ...">
+
+                    <label for="lsexe">Sexe</label><br>
+                    <input type="radio" id="L_Homme" name="genderS" value="Homme" checked > Homme
+                    <input type="radio" id="L_Femme" name="genderS" value="Femme"  > Femme<br>                        
+
+                    <label for="fname">Country</label>
+                    <input type="text" id="fcountry" placeholder="Your Country ...">
+
+                    <input type="submit" value="Submit" onclick="SaveData()" id="save">
+                    <input type="submit" value="Annuler" onclick="resetForm()">                    
+            </div>
+            <div id="listeUser">                    
+                <table class="list" id="contactList">                        
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>Mail</th>
+                                <th>Sexe</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    
+    <script src="javascriptRegister.js"></script>
+</body>
+</html>

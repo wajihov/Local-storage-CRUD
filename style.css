@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+
+.header {
+	width:100%;
+	height:50px;
+    background-color:#00CCFF;
+    padding-top: 15px;
+	}
+.menu {
+	float:left;
+	width:21%;
+	height:562px;
+	background-color:#FF6699;
+	}
+.content {
+	float:left;
+	width:79%;
+	height:500px;
+	
+	}
+.footer {
+	clear:both;
+	width:100%;
+	height:50px;
+    background-color:#33FF99;
+    padding-top: 15px;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    /*padding: 0;*/
+    padding-top: 70px;
+  }
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+  .menu a {
+    text-decoration: none;
+    display: block;
+    color: #f2f2f2;
+  } 
+/*--------------------------------------------------------*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+    
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  /*--------------------------------------------------------*/
+
+table {
+    border-collapse: collapse;
+}
+
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+/* #disconnect {
+  overflow: hidden;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  color: white;
+} */
+a.buy {
+  color: #2da1c1;
+    font-size: 22px;
+    text-decoration: none;
+    position: absolute;
+    right: 18px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+a.buy:hover
+{
+  color: #f90;
+  text-decoration: underline;         
+}
